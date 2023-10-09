@@ -1,0 +1,97 @@
+{
+  "description": [
+    "Default preset for team A"
+  ],
+  "extends": [
+    "config:base"
+  ],
+  "labels": [
+    "dependencies",
+    "renovate",
+    "A"
+  ],
+  "packageRules": [
+    {
+      "matchDatasources": [
+        "maven"
+      ],
+      "addLabels": [
+        "java"
+      ],
+      "reviewers": [
+        "Nadja.K",
+        "Paul.H",
+        "Alexander.B",
+        "Vladyslav.O",
+        "Javad.A"
+      ],
+      "assignees": [
+        "Nadja.K",
+        "Paul.H",
+        "Alexander.B",
+        "Vladyslav.O",
+        "Javad.A"
+      ]
+    },
+    {
+      "matchDatasources": [
+        "npm","yarn"
+      ],
+      "addLabels": [
+        "typescript","javascript"
+      ],
+      "reviewers": [
+        "Nadja.K",
+        "Paul.H",
+        "Alexander.B"
+      ],
+      "assignees": [
+        "Nadja.K",
+        "Paul.H",
+        "Alexander.B"
+      ]
+    },
+    {
+      "matchDatasources": [
+        "go"
+      ],
+      "addLabels": [
+        "golang"
+      ],
+      "reviewers": [
+        "Paul.H",
+        "Alexander.B"
+      ],
+      "assignees": [
+        "Paul.H",
+        "Alexander.B"
+      ]
+    },
+    {
+      "matchUpdateTypes": [
+        "minor",
+        "patch",
+        "pin",
+        "digest"
+      ],
+      "automerge": true,
+      "automergeStrategy": "rebase"
+    }
+  ],
+  "reviewers": [
+    "Paul.H",
+    "Nadja.K",
+    "Vladyslav.O"
+  ],
+  "reviewersSampleSize": 2,
+  "assignees": [
+    "Paul.H",
+    "Vladyslav.O"
+  ],
+  "assigneesSampleSize": 1,
+  "assignAutomerge": true,
+  "gitLabIgnoreApprovals": true,
+  "platformAutomerge": true,
+  "prConcurrentLimit": 2,
+  "prHourlyLimit": 1
+}
